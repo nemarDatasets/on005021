@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on005021",
-  "source": "openneuro",
-  "source_id": "ds005021",
+  "pipeline_stage": "validated",
   "title": "Tilt Illusion by Phase",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Jessica G. Williams": {},
     "William J. Harrison": {},
@@ -11,32 +11,74 @@
     "Jason B. Mattingley": {},
     "Anthony M. Harris": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005021.v1.2.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005021",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005021",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.2.1",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "Australian Research Council (DE190100136)"
+      "funder_name": "Australian Research Council",
+      "award_number": "DE190100136"
     },
     {
-      "funder_name": "Australian Research Council (DE220101019)"
+      "funder_name": "Australian Research Council",
+      "award_number": "DE220101019"
     },
     {
-      "funder_name": "National Health and Medical Research Council (NHMRC) Australia Investigator Grant (GNT2010141)"
+      "funder_name": "National Health and Medical Research Council (NHMRC) Australia",
+      "award_number": "GNT2010141"
     }
-  ]
+  ],
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".fdt",
+    ".json",
+    ".mat",
+    ".md",
+    ".set",
+    ".tsv"
+  ],
+  "description": "This dataset contains EEG recordings from 36 participants performing a visual discrimination task involving a tilt illusion paradigm. Participants judged the orientation of a central grating surrounded by an annular grating at ±30 degrees while 64-channel EEG was recorded. The study investigates the prestimulus EEG correlates, specifically alpha oscillation power and phase, that predict variations in tilt illusion magnitude.",
+  "methods_description": "EEG data were recorded using a Biosemi Active2 system with 64 scalp electrodes and 6 EOG electrodes during a visual orientation discrimination task. Stimuli (central target grating surrounded by annular grating at ±30 degrees) were presented for 8.3 ms at 60% contrast. Participants responded using a keyboard. Original data in .bdf format were converted to EEGLab format (.set and .fdt files).",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "alpha oscillations"
+    },
+    {
+      "term": "visual perception"
+    },
+    {
+      "term": "tilt illusion"
+    },
+    {
+      "term": "prestimulus activity"
+    },
+    {
+      "term": "neural oscillations"
+    }
+  ],
+  "source_hash": "1041cee55f228e1d52f0eefd333dceb5c6058b142b7b9c6f997a70c893338cc9"
 }
