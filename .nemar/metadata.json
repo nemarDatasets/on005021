@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Tilt Illusion by Phase",
+  "description": "This dataset contains EEG recordings from 36 participants performing a visual discrimination task involving a tilt illusion. Participants judged the orientation of a central grating surrounded by an annular grating at ±30 degrees, which induces a perceptual bias. The study investigates the prestimulus EEG correlates of alpha oscillation power and phase on discrimination performance and the magnitude of the tilt illusion effect.",
+  "methods_description": "EEG data were recorded using a Biosemi Active2 system with 64 scalp electrodes and 6 EOG electrodes during brief stimulus presentations (8.3 ms at 60% contrast). Participants responded to perceived grating orientation using a keyboard. Stimuli were preceded by a masking grating to prevent tilt aftereffects. Original data in .bdf format were converted to EEGLab format (.set and .fdt files).",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -11,55 +13,6 @@
     "Jason B. Mattingley": {},
     "Anthony M. Harris": {}
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds005021.v1.2.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on005021",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005021",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    }
-  ],
-  "funding_references": [
-    {
-      "funder_name": "Australian Research Council",
-      "award_number": "DE190100136"
-    },
-    {
-      "funder_name": "Australian Research Council",
-      "award_number": "DE220101019"
-    },
-    {
-      "funder_name": "National Health and Medical Research Council (NHMRC) Australia",
-      "award_number": "GNT2010141"
-    }
-  ],
-  "modalities": [
-    "eeg"
-  ],
-  "resource_type_specific": "EEG Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".bdf",
-    ".fdt",
-    ".json",
-    ".mat",
-    ".md",
-    ".set",
-    ".tsv"
-  ],
-  "description": "This dataset contains EEG recordings from 36 participants performing a visual discrimination task involving a tilt illusion paradigm. Participants judged the orientation of a central grating surrounded by an annular grating at ±30 degrees while 64-channel EEG was recorded. The study investigates the prestimulus EEG correlates, specifically alpha oscillation power and phase, that predict variations in tilt illusion magnitude.",
-  "methods_description": "EEG data were recorded using a Biosemi Active2 system with 64 scalp electrodes and 6 EOG electrodes during a visual orientation discrimination task. Stimuli (central target grating surrounded by annular grating at ±30 degrees) were presented for 8.3 ms at 60% contrast. Participants responded using a keyboard. Original data in .bdf format were converted to EEGLab format (.set and .fdt files).",
   "keywords": [
     {
       "term": "EEG"
@@ -77,8 +30,57 @@
       "term": "prestimulus activity"
     },
     {
-      "term": "neural oscillations"
+      "term": "neural correlates"
     }
   ],
-  "source_hash": "1041cee55f228e1d52f0eefd333dceb5c6058b142b7b9c6f997a70c893338cc9"
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/on005021",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005021",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005021.v1.2.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "Australian Research Council",
+      "award_number": "DE190100136"
+    },
+    {
+      "funder_name": "Australian Research Council",
+      "award_number": "DE220101019"
+    },
+    {
+      "funder_name": "National Health and Medical Research Council",
+      "award_number": "GNT2010141",
+      "award_title": "NHMRC Australia Investigator Grant"
+    }
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "sizes": [
+    "89.3 GB (152 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".fdt",
+    ".json",
+    ".mat",
+    ".md",
+    ".set",
+    ".tsv",
+    ".yml"
+  ],
+  "source_hash": "7b29a16750a715c2359784d292ad8cf256065f06c6df28464fb5ca82333616d0"
 }
