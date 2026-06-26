@@ -3,7 +3,7 @@
   "pipeline_stage": "validated",
   "title": "Tilt Illusion by Phase",
   "description": "This dataset contains EEG recordings from 36 participants performing a visual discrimination task involving a tilt illusion. Participants judged the orientation of a central grating surrounded by an annular grating at ±30 degrees, which induces a perceptual bias. The study investigates the prestimulus EEG correlates of alpha oscillation power and phase on discrimination performance and the magnitude of the tilt illusion effect.",
-  "methods_description": "EEG data were recorded using a Biosemi Active2 system with 64 scalp electrodes and 6 EOG electrodes during brief stimulus presentations (8.3 ms at 60% contrast). Participants responded to perceived grating orientation using a keyboard. Stimuli were preceded by a masking grating to prevent tilt aftereffects. Original data in .bdf format were converted to EEGLab format (.set and .fdt files).",
+  "methods_description": "EEG data were recorded using a Biosemi Active2 system with 64 scalp electrodes and 6 EOG electrodes during a visual orientation discrimination task. Stimuli were presented for 8.3 ms at 60% contrast. Participants responded using a keyboard. Original data in .bdf format were converted to EEGLab format (.set and .fdt files) for BIDS compliance.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -30,7 +30,7 @@
       "term": "prestimulus activity"
     },
     {
-      "term": "neural correlates"
+      "term": "orientation discrimination"
     }
   ],
   "related_identifiers": [
@@ -62,7 +62,7 @@
     {
       "funder_name": "National Health and Medical Research Council",
       "award_number": "GNT2010141",
-      "award_title": "NHMRC Australia Investigator Grant"
+      "award_title": "Investigator Grant"
     }
   ],
   "resource_type_specific": "EEG Dataset",
