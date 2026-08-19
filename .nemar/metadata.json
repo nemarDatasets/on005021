@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Tilt Illusion by Phase",
-  "description": "This dataset contains EEG recordings from 36 participants performing a visual discrimination task involving a tilt illusion. Participants judged the orientation of a central grating surrounded by an annular grating at ±30 degrees, which induces a perceptual bias. The study investigates the prestimulus EEG correlates of alpha oscillation power and phase on discrimination performance and the magnitude of the tilt illusion effect.",
-  "methods_description": "EEG data were recorded using a Biosemi Active2 system with 64 scalp electrodes and 6 EOG electrodes during a visual orientation discrimination task. Stimuli were presented for 8.3 ms at 60% contrast. Participants responded using a keyboard. Original data in .bdf format were converted to EEGLab format (.set and .fdt files) for BIDS compliance.",
+  "description": "This dataset contains 64-channel EEG recordings from 36 participants performing a visual tilt illusion task, in which the perceived orientation of a central grating was biased by a surrounding annular grating. The study examines how prestimulus alpha oscillation power and phase relate to discrimination performance and the magnitude of the tilt illusion. Data were collected to support investigations into the neural correlates of perceptual bias in orientation discrimination.",
+  "methods_description": "EEG data were recorded using a Biosemi Active 2 system with 64 scalp electrodes and 6 EOG electrodes (left/right HEOG, VEOG, and left/right mastoids). Participants judged the tilt of a briefly presented (8.3ms) central grating surrounded by an annular grating of +-30 degrees, with individual titration of perceived vertical angle per surround condition. Responses were made via keyboard button press. Original data were recorded in .bdf format using Actiview and later converted to EEGLab format (.set/.fdt).",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -15,7 +15,12 @@
   },
   "keywords": [
     {
-      "term": "EEG"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "tilt illusion"
     },
     {
       "term": "alpha oscillations"
@@ -24,13 +29,16 @@
       "term": "visual perception"
     },
     {
-      "term": "tilt illusion"
-    },
-    {
-      "term": "prestimulus activity"
-    },
-    {
       "term": "orientation discrimination"
+    },
+    {
+      "term": "prestimulus EEG"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "visual cortex"
     }
   ],
   "related_identifiers": [
@@ -40,14 +48,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005021",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds005021.v1.2.1",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005021",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -60,7 +68,7 @@
       "award_number": "DE220101019"
     },
     {
-      "funder_name": "National Health and Medical Research Council",
+      "funder_name": "National Health and Medical Research Council (NHMRC) Australia",
       "award_number": "GNT2010141",
       "award_title": "Investigator Grant"
     }
