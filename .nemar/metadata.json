@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Tilt Illusion by Phase",
-  "description": "This dataset contains 64-channel EEG recordings from 36 participants performing a visual tilt illusion task, in which the perceived orientation of a central grating was biased by a surrounding annular grating. The study examines how prestimulus alpha oscillation power and phase relate to discrimination performance and the magnitude of the tilt illusion. Data were collected to support investigations into the neural correlates of perceptual bias in orientation discrimination.",
-  "methods_description": "EEG data were recorded using a Biosemi Active 2 system with 64 scalp electrodes and 6 EOG electrodes (left/right HEOG, VEOG, and left/right mastoids). Participants judged the tilt of a briefly presented (8.3ms) central grating surrounded by an annular grating of +-30 degrees, with individual titration of perceived vertical angle per surround condition. Responses were made via keyboard button press. Original data were recorded in .bdf format using Actiview and later converted to EEGLab format (.set/.fdt).",
+  "description": "EEG recordings from 36 participants performing an orientation discrimination task in a visual tilt illusion paradigm. A central target grating, titrated to appear vertical on average, was surrounded by an annular grating tilted by ±30 degrees. The dataset supports analysis of prestimulus EEG correlates, including alpha oscillation power and phase, of increased or decreased tilt illusion strength.",
+  "methods_description": "EEG was recorded with a Biosemi Active 2 system using 64 scalp electrodes and 6 EOG electrodes. Participants judged the tilt of a briefly presented (8.3 ms, 60% contrast) central grating by pressing left or right arrow keys. The angle of the central grating was first titrated to each participant's perceived vertical, separately for each surround. A mask of combined gratings was shown between trials to prevent buildup of tilt aftereffects. Original BDF files were converted to EEGLAB .set/.fdt format for BIDS.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -15,9 +15,7 @@
   },
   "keywords": [
     {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "term": "EEG"
     },
     {
       "term": "tilt illusion"
@@ -32,13 +30,7 @@
       "term": "orientation discrimination"
     },
     {
-      "term": "prestimulus EEG"
-    },
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "visual cortex"
+      "term": "oscillatory phase"
     }
   ],
   "related_identifiers": [
@@ -68,7 +60,7 @@
       "award_number": "DE220101019"
     },
     {
-      "funder_name": "National Health and Medical Research Council (NHMRC) Australia",
+      "funder_name": "National Health and Medical Research Council",
       "award_number": "GNT2010141",
       "award_title": "Investigator Grant"
     }
@@ -78,7 +70,7 @@
     "eeg"
   ],
   "sizes": [
-    "89.3 GB (152 files)"
+    "83.20 GB (152 files)"
   ],
   "formats": [
     ".bdf",
